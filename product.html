@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <style>
+        :root{
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --white: #fff;
+            --black: #000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .cards-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            gap: 26px;
+            place-content: center;
+        }
+
+        .product-card{
+            width: 240px;
+
+        }
+
+        .product-card img{
+            width: 100%;
+            height: 240px;
+            border-radius: 20px;
+            border: solid 1px;
+            object-fit: cover;
+        }
+
+        .product-info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-info div p:nth-child(1){
+            font-weight: bold;
+            color: var(--black);
+            font-size: var(--md);
+            margin-bottom: 0;
+        }
+
+        .product-info div p:nth-child(2){
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+            margin-top: 0;
+        }
+
+        .product-info figure img{
+            width: 35px;
+            height: 35px;
+        }
+
+        .product-info figure{
+            margin: 0;
+        }
+
+        @media (max-width: 640px){            
+            .cards-container{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 140px);
+                gap: 26px;
+            }
+
+            .product-card{
+                width: 140px;
+
+            }
+
+            .product-card img{
+                width: 100%;
+                height: 140px;
+                border-radius: 20px;
+                border: solid 1px;
+                object-fit: cover;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+            <div class="product-card">
+                <img src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,000</p>
+                        <p>bike</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,000</p>
+                        <p>bike</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="">
+                 <div class="product-info">
+                     <div>
+                         <p>$120,000</p>
+                         <p>bike</p>
+                     </div>
+                     <figure>
+                         <img src="./Icons/bt_add_to_cart.svg" alt="">
+                     </figure>
+                 </div>
+             </div>
+             <div class="product-card">
+                <img src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="">
+                 <div class="product-info">
+                     <div>
+                         <p>$120,000</p>
+                         <p>bike</p>
+                     </div>
+                     <figure>
+                         <img src="./Icons/bt_add_to_cart.svg" alt="">
+                     </figure>
+                 </div>
+             </div>
+             <div class="product-card">
+                <img src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="">
+                 <div class="product-info">
+                     <div>
+                         <p>$120,000</p>
+                         <p>bike</p>
+                     </div>
+                     <figure>
+                         <img src="./Icons/bt_add_to_cart.svg" alt="">
+                     </figure>
+                 </div>
+             </div>
+             <div class="product-card">
+                <img src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="">
+                 <div class="product-info">
+                     <div>
+                         <p>$120,000</p>
+                         <p>bike</p>
+                     </div>
+                     <figure>
+                         <img src="./Icons/bt_add_to_cart.svg" alt="">
+                     </figure>
+                 </div>
+             </div>
+             <div class="product-card">
+                <img src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="">
+                 <div class="product-info">
+                     <div>
+                         <p>$120,000</p>
+                         <p>bike</p>
+                     </div>
+                     <figure>
+                         <img src="./Icons/bt_add_to_cart.svg" alt="">
+                     </figure>
+                 </div>
+             </div>
+             <div class="product-card">
+                <img src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="">
+                 <div class="product-info">
+                     <div>
+                         <p>$120,000</p>
+                         <p>bike</p>
+                     </div>
+                     <figure>
+                         <img src="./Icons/bt_add_to_cart.svg" alt="">
+                     </figure>
+                 </div>
+             </div>
+             <div class="product-card">
+                <img src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="">
+                 <div class="product-info">
+                     <div>
+                         <p>$120,000</p>
+                         <p>bike</p>
+                     </div>
+                     <figure>
+                         <img src="./Icons/bt_add_to_cart.svg" alt="">
+                     </figure>
+                 </div>
+             </div>
+             <div class="product-card">
+                <img src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="">
+                 <div class="product-info">
+                     <div>
+                         <p>$120,000</p>
+                         <p>bike</p>
+                     </div>
+                     <figure>
+                         <img src="./Icons/bt_add_to_cart.svg" alt="">
+                     </figure>
+                 </div>
+             </div>
+             <div class="product-card">
+                <img src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="">
+                 <div class="product-info">
+                     <div>
+                         <p>$120,000</p>
+                         <p>bike</p>
+                     </div>
+                     <figure>
+                         <img src="./Icons/bt_add_to_cart.svg" alt="">
+                     </figure>
+                 </div>
+             </div>
+        </div>
+    </section>
+</body>
+</html>
