@@ -1,0 +1,145 @@
+:root{
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --hospital-green: #acd9b2;
+  --white: #fff;
+  --black: #000;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+  }
+
+body{
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  border-bottom: solid 1px var(--very-light-pink);
+}
+
+.menu{
+  display: none;
+}
+
+.logo{
+  width: 130px;
+}
+
+.navbar-left{
+  display: flex;
+}
+
+.navbar-left ul{
+  margin-left: 15px;
+}
+
+.navbar-shopping-cart{
+  position: relative;
+}
+
+.navbar-shopping-cart div{
+  width: 16px;
+  height: 16px;
+  background: var(--hospital-green);
+  border-radius: 50%;
+  font-size: var(--sm);
+  font-weight: bold;
+  position: absolute;
+  top: -8px;
+  right: -3px;
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left ul li a,
+.navbar-right ul li a{
+  text-decoration: none;
+  color: var(--very-light-pink);
+  border: solid 1px var(--white);
+  border-radius: 3px;
+  padding: 8px;
+}
+
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover{
+  border: solid 1px var(--hospital-green);
+  color: var(--hospital-green);
+}
+
+.navbar-right ul a{
+  margin-right: 20px;
+}
+
+.desktop-menu{
+  position: absolute;
+  top: 110px;
+  right: 100px;
+  background-color: var(--white);
+  width: 100px;
+  height: auto;
+  border: solid 1px var(--very-light-pink);
+  border-radius: 0 0 8px 8px;
+}
+
+.desktop-menu ul{
+  display: block;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.desktop-menu ul li{
+  text-align: end;
+  font-weight: bold;
+  padding: 12px 0;
+}
+
+.desktop-menu ul li:last-child{
+  padding-top: 20px;
+  border-top: solid 1px var(--very-light-pink);
+}
+
+.desktop-menu ul li a{
+  text-decoration: none;
+  color: var(--black);
+  /*display: inline-block;*/
+  margin-bottom: 20px;
+
+}
+
+.desktop-menu ul li:last-child a{
+  color: var(--hospital-green);
+  font-size: var(--sm);
+  font-weight: normal;
+}
+
+.inactive{
+  display: none;
+}
+
+
+@media(max-width: 640px){
+  .menu{
+    display: block;
+  }
+
+  .navbar-left ul{
+    display: none;
+  }
+
+  .navbar-right ul li a{
+    display: none;
+  }
+}
