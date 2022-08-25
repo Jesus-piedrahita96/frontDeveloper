@@ -3,8 +3,11 @@ const desktopMenu = document.querySelector('.desktop-menu')
 const menu = document.querySelector('.menu')
 const menuMobil = document.querySelector('.mobile-menu')
 const navShopingCart = document.querySelector('.navbar-shopping-cart')
-const productDetail = document.querySelector('.product-detail')
-
+const productDetail = document.querySelector('#shoppingCartContainer')
+const productDetail2 = document.querySelector('.productDetail2')
+const productDetailClose = document.querySelector('.productDetail-close')
+const productCardContainer = document.querySelector('.cards-container')
+const productMainContainer = document.querySelector('.main-container')
 
 navEmail.addEventListener('click', () => {
   const productDetailIsClosed = productDetail.classList.contains('inactive')
@@ -12,6 +15,7 @@ navEmail.addEventListener('click', () => {
   if(!productDetailIsClosed){
     productDetail.classList.add('inactive')
   }
+  productDetail2.classList.add('inactive')
   desktopMenu.classList.toggle('inactive')
 })
 
@@ -21,23 +25,23 @@ menu.addEventListener('click', () => {
   if(!productDetailIsClosed){
     productDetail.classList.add('inactive')
   }
+  productDetail2.classList.add('inactive')
 
   menuMobil.classList.toggle('inactive')
 })
 
 navShopingCart.addEventListener('click', () => {
-  const menuMobilIsClosed = menuMobil.classList.contains('inactive')
-  const desktopMenuIsClosed = desktopMenu.classList.contains('inactive')
 
-  if(!menuMobilIsClosed){
-    menuMobil.classList.add('inactive')
-  }
-
-  if(!desktopMenuIsClosed){
-    desktopMenu.classList.add('inactive')
-  }
+  menuMobil.classList.add('inactive')
+  desktopMenu.classList.add('inactive')
+  productDetail2.classList.add('inactive')
 
   productDetail.classList.toggle('inactive')
+})
+
+productDetailClose.addEventListener('click', () => {
+  menuMobil.classList.add('inactive')
+  productDetail2.classList.add('inactive')
 })
 
 const productList = []
@@ -57,7 +61,6 @@ productList.push({
   image: 'https://m.media-amazon.com/images/I/71mU5rpECpL._AC_SL1385_.jpg'
 })
 
-const productCardContainer = document.querySelector('.cards-container')
 
 function renderCard(list){
   for (product of list){
@@ -66,6 +69,14 @@ function renderCard(list){
 
     const productImage = document.createElement('img')
     productImage.setAttribute('src', product.image)
+
+    productImage.addEventListener('click', function(){
+      desktopMenu.classList.add('inactive')
+      productDetail.classList.add('inactive')
+
+      productDetail2.classList.remove('inactive')
+
+    })
 
     const productInfo = document.createElement('div')
     productInfo.classList.add('product-info')
@@ -95,5 +106,6 @@ function renderCard(list){
 
   }
 }
+
 
 renderCard(productList)

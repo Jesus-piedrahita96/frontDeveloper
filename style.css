@@ -139,6 +139,7 @@ ul{
 
 /* * =========== Menu Mobile =========== */
 .mobile-menu{
+  background-color: var(--white);
   position: absolute;
   top: 120px;
 }
@@ -192,13 +193,14 @@ ul{
 /** nav */
 
 /** ========== style of aside =============== */
-.product-detail{
+aside{
   width: 360px;
   padding-bottom: 24px;
   position:absolute;
   right: 0;
   padding: 0 24px;
   box-sizing: border-box;
+  background-color: var(--white);
 }
 
 .tittle{
@@ -281,6 +283,78 @@ ul{
   justify-content: center;
   align-items: center;
 }
+/** ================= Product detail ============= */
+/* #productDetail{
+  width: 360px;
+  padding-bottom: 24px;
+  position:absolute;
+  right: 0;
+} */
+
+.productDetail-close{
+  background: var(--black);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 2;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+#productDetail-close img:hover{
+  cursor: pointer;
+}
+
+#productDetail img:nth-child(2){
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+}
+
+.product-info2{
+  margin: 12px 12px 0 12px;
+}
+
+.product-info2 p:nth-child(1){
+  font-weight: bold;
+  font-size: var(--md);
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.product-info2 p:nth-child(2){
+  font-weight: bold;
+  color: var(--very-light-pink);
+  font-size: var(--md);
+  margin-top: 0;
+}
+
+.product-info2 p:nth-child(3){
+  color: var(--very-light-pink);
+  font-size: var(--sm);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.primary-button{
+  background: var(--hospital-green);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/** Product detail */
+
+
 /** Aside */
 /* * ============ Section of product =========== */
 .cards-container{
@@ -346,12 +420,18 @@ ul{
     display: none;
   }
 
-  .product-detail{
+  aside{
     width: 100%;
   }
 
   .desktop-menu{
     display: none;
+  }
+
+  .mobile-menu{
+    width: 100%;
+    left: 0;
+    padding-left: 8px;
   }
 
   .cards-container{
@@ -371,6 +451,10 @@ ul{
     border-radius: 20px;
     border: solid 1px;
     object-fit: cover;
+  }
+
+  #productDetail{
+    width: 100%;
   }
 }
 
