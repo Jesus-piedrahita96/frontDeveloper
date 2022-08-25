@@ -1,31 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--============================================================= -->
-    <!--================== Enlaces Font ============================= -->
-    <link rel = "preconnect" href = "https://fonts.googleapis.com">
-    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-    <link href = "https: //fonts.googleapis.com/css2? familia = arenas movedizas: wght @ 300; 500; 700 & display = swap "rel =" stylesheet ">
-    <!--============================================================= -->
-    <title>Document</title>
-    <style>
-        :root{
-            --very-light-pink: #c7c7c7;
-            --text-input-field: #f7f7f7;
-            --hospital-green: #acd9b2;
-            --white: #fff;
-            --black: #000;
-        }
-
-        body{
-            font-family: 'Quicksand', sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--============================================================= -->
+  <!--================== Enlaces Font ============================= -->
+  <link rel = "preconnect" href = "https://fonts.googleapis.com">
+  <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+  <!--============================================================= -->
+  <title>Menu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>hola mundo retome el archivo el de html y css</p>
+  <nav>
+    <img src="./Icons/icon_menu.svg" alt="menu-mobil" class="menu">
+    <div class="navbar-left">
+      <img src="./Logos/logo_yard_sale.svg" alt="logo" class="logo">
+      <ul>
+        <li>
+          <a href="/">All</a>
+        </li>
+        <li>
+          <a href="/">Clothes</a>
+        </li>
+        <li>
+          <a href="/">Eletronics</a>
+        </li>
+        <li>
+          <a href="/">Furniture</a>
+        </li>
+        <li>
+          <a href="/">Toys</a>
+        </li>
+        <li>
+          <a href="/">Others</a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-right">
+      <ul>
+        <li><a class="nav-email" href="#">Jesu9606@gmail.com</a></li>
+        <li class="navbar-shopping-cart">
+          <img src="./Icons/icon_shopping_cart.svg" alt="shopping-cart">
+          <div>2</div>
+        </li>
+      </ul>
+    </div>
+    <div class="desktop-menu inactive">
+      <ul>
+        <li>
+          <a href="/" class="tittle">My order</a>
+        </li>
+        <li>
+          <a href="/">My account</a>
+        </li>
+        <li>
+          <a href="/">sign out</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-menu inactive">
+      <ul class="lista1">
+          <li>
+              <a href="/">CATEGORIES</a>
+          </li>
+          <li>
+              <a href="/">ALL</a>
+          </li>
+          <li>
+              <a href="/">Clothes</a>
+          </li>
+          <li>
+              <a href="/">Electronics</a>
+          </li>
+          <li>
+              <a href="/">Furnitures</a>
+          </li>
+          <li>
+              <a href="/">Toys</a>
+          </li>
+          <li>
+              <a href="/">Others</a>
+          </li>
+      </ul>
+      <ul class="lista2">
+          <li>
+              <a href="/">my orders</a>
+          </li>
+          <li>
+              <a href="/">My account</a>
+          </li>
+      </ul>
+      <ul class="lista3">
+          <li>
+              <a href="/">programador9606@gmail.com</a>
+          </li>
+          <li>
+              <a href="/">Sign out</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+  <aside id="shoppingCartContainer" class="inactive">
+    <div class="my-order-content">
+      <div class="tittle">
+        <img src="./Icons/flechita.svg" alt="arrow">
+        <p>Shopping cart</p>
+      </div>
+      <div class="shopping-card">
+        <figure>
+           <img src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="bike">
+        </figure>
+        <p>Bike</p>
+        <p>$40.00</p>
+        <img src="./Icons/icon_close.png" alt="close">
+      </div>
+      <div class="shopping-card">
+          <figure>
+            <img src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="bike">
+          </figure>
+          <p>Bike</p>
+          <p>$40.00</p>
+          <img src="./Icons/icon_close.png" alt="close">
+      </div>
+      <div class="shopping-card">
+          <figure>
+            <img src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="bike">
+          </figure>
+          <p>Bike</p>
+          <p>$40.00</p>
+          <img src="./Icons/icon_close.png" alt="close">
+      </div>
+      <div class="order">
+        <p>
+            <span>Total</span>
+        </p>
+        <p>$560.00</p>
+      </div>
+      <button class="primary-button">
+        Checkout
+      </button>
+    </div>
+  </aside>
+
+  <aside id="productDetail" class="productDetail2 inactive">
+    <div class="productDetail-close">
+      <img src="./Icons/icon_close.png" alt="cerrar">
+    </div>
+    <img class="imagePresentacion" src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="bike">
+    <div class="product-info2">
+      <p>$120.00</p>
+      <p>Bike</p>
+      <p>
+        Una bicicleta es un medio de transporte alternativo que te permite desplazarte sin
+        contaminar el medio ambiente, además, te permite mejorar tu resistencia aeróbica y
+        te ayuda a fortalecer los músculos de tu cuerpo
+      </p>
+      <button class="primary-button">
+        <img src="./Icons/bt_add_to_cart.svg" alt="add to cart">
+        add to cart
+      </button>
+    </div>
+  </aside>
+
+  <section class="main-container">
+    <div class="cards-container">
+      <!-- <div class="product-card">
+        <img src="https://olimpica.vtexassets.com/arquivos/ids/524355/Bicicleta-RALI-RIO-Mec%EF%BF%BDnica-29-Hombre--Negro-Verde.jpg?v=637558583193570000" alt="">
+        <div class="product-info">
+          <div>
+            <p>$120,000</p>
+            <p>bike</p>
+          </div>
+          <figure>
+            <img src="./Icons/bt_add_to_cart.svg" alt="">
+          </figure>
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <script src="./index.js"></script>
 </body>
 </html>
